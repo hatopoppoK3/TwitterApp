@@ -1,0 +1,9 @@
+<!--?xml version="1.0" encoding="utf-8"? -->
+<cronentries>
+	<!-- <cron>
+		<url>/cron/auto/friends</url>
+		<schedule>every 15 minutes synchronized</schedule>
+		<description>every15minutes updateFriends</description>
+		<timezone>Asia/Tokyo</timezone>
+	</cron> -->
+</cronentries>
