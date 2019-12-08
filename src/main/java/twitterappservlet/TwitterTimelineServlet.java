@@ -149,6 +149,5 @@ public class TwitterTimelineServlet extends HttpServlet {
 			TimelineLog.info("TimelineServlet doRetweet and do Favority success.");
 			e.printStackTrace();
 		}
-
 	}
 }

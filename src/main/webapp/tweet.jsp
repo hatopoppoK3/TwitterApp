@@ -48,8 +48,8 @@
 				<form action="/admin/tweet" method="post">
 					ツイート内容:<br>
 					<textarea rows="5" cols="30" name="tweet"></textarea>
-					<input type="submit" value="ツイート"> <input type="reset"
-						value="リセット">
+					<br> <input type="submit" value="ツイート"> <input
+						type="reset" value="リセット">
 				</form>
 			</div>
 		</div>
