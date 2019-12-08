@@ -35,7 +35,6 @@
 						<span>機能一覧</span>
 					</h2>
 					<ul>
-						<li><a href="/">Bot機能</a></li>
 						<li><a href="/admin/tweet">ツイート機能</a></li>
 						<li><a href="/admin/timeline">Timeline機能</a></li>
 					</ul>
