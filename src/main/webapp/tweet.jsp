@@ -7,10 +7,10 @@
 <meta http-equiv="content-language" content="ja">
 <meta charset="UTF-8">
 <title>TwitterApp</title>
-<link rel="stylesheet" type="text/css" media="all" href="/css/base.css">
-<link rel="stylesheet" type="text/css" media="all"
-	href="/css/lightbox.css">
-<link rel="icon" href="/images/favicon.ico">
+<link rel="stylesheet" type="text/css" media="all" href="/css/base.css" />
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link rel="icon" href="/images/favicon.ico" />
 </head>
 
 <body>
@@ -47,8 +47,8 @@
 				<form action="/admin/tweet" method="post">
 					ツイート内容:<br>
 					<textarea rows="5" cols="30" name="tweet"></textarea>
-					<input type="submit" value="ツイート"> <input type="reset"
-						value="リセット">
+					<br> <input type="submit" value="ツイート"> <input
+						type="reset" value="リセット">
 				</form>
 			</div>
 		</div>
@@ -56,8 +56,10 @@
 			<h2>footer</h2>
 		</footer>
 	</div>
-	<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="/js/lightbox.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 
 </html>

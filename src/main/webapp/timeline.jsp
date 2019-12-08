@@ -15,8 +15,6 @@
 <meta charset="UTF-8">
 <title>TwitterApp</title>
 <link rel="stylesheet" type="text/css" media="all" href="/css/base.css" />
-<link rel="stylesheet" type="text/css" media="all"
-	href="/css/lightbox.css" />
 <link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 <link rel="icon" href="/images/favicon.ico">
