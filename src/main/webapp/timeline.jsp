@@ -49,7 +49,28 @@
 				<h2 class="article-title">
 					<span>Timeline機能</span>
 				</h2>
-				<%=request.getAttribute("toStringMyUserData")%>
+				<%
+					TwitterUserData myUserData = (TwitterUserData) request.getAttribute("myUserData");
+				%>
+				<div class="article-account-box">
+					<div class="article-account-row">
+						<div>
+							<img src=<%=myUserData.getUserImageURL()%> width="64" height="64">
+						</div>
+						<div><%=myUserData.getUserName()%>(@<%=myUserData.getUserScreenName()%>)
+						</div>
+					</div>
+					<div class="article-account-row">
+						<div>
+							ツイート数:<%=myUserData.getUserStatusesCount()%></div>
+						<div>
+							お気に入り数:<%=myUserData.getUserFavouritesCount()%></div>
+						<div>
+							フォロー数:<%=myUserData.getUserFriendsCount()%></div>
+						<div>
+							フォロワー数:<%=myUserData.getUserFollowersCount()%></div>
+					</div>
+				</div>
 				<p>
 					こちらのアカウントについてのHomeTimelineやUserTimeline、ふぁぼ、自分にメンションがついているツイートを見ることができます。
 					<br> また、ユーザー名を入力することでそのアカウントのUserTimeline、ふぁぼツイートを見ることができます。<br>デフォルトではHomeTimelineが選択されます。

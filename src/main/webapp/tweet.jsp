@@ -1,3 +1,4 @@
+<%@page import="twitterapp.TwitterUserData"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -14,7 +15,7 @@
 </head>
 
 <body>
-	<div id="container">
+	<div class="container">
 		<header class="header-template">
 			<h1 class="header-title">
 				<a href="/">TwitterApp</a>
@@ -42,7 +43,28 @@
 				<h2 class="article-title">
 					<span>ツイート機能</span>
 				</h2>
-				<%=request.getAttribute("toStringMyUserData")%>
+				<%
+					TwitterUserData myUserData = (TwitterUserData) request.getAttribute("myUserData");
+				%>
+				<div class="article-account-box">
+					<div class="article-account-row">
+						<div>
+							<img src=<%=myUserData.getUserImageURL()%> width="64" height="64">
+						</div>
+						<div><%=myUserData.getUserName()%>(@<%=myUserData.getUserScreenName()%>)
+						</div>
+					</div>
+					<div class="article-account-row">
+						<div>
+							ツイート数:<%=myUserData.getUserStatusesCount()%></div>
+						<div>
+							お気に入り数:<%=myUserData.getUserFavouritesCount()%></div>
+						<div>
+							フォロー数:<%=myUserData.getUserFriendsCount()%></div>
+						<div>
+							フォロワー数:<%=myUserData.getUserFollowersCount()%></div>
+					</div>
+				</div>
 				<p>テキストBOXにテキストを打ち込むことで上のアカウントでツイートすることができます。</p>
 				<form action="/admin/tweet" method="post">
 					ツイート内容:<br>

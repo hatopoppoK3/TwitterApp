@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import twitter4j.TwitterException;
 import twitterapp.TwitterTweet;
-import twitterapp.TwitterUserData;
 
 @WebServlet(name = "TwitterTweetServlet", urlPatterns = { "/admin/tweet" })
 public class TwitterTweetServlet extends HttpServlet {
@@ -28,9 +27,9 @@ public class TwitterTweetServlet extends HttpServlet {
 			TwitterTweet twitterTweet = new TwitterTweet();
 
 			/**
-			 * UserName,UserImageURLのset
+			 * myUserDataをset
 			 */
-			request.setAttribute("toStringMyUserData", TwitterUserData.toStringUserData(twitterTweet.getMyUserData()));
+			request.setAttribute("myUserData", twitterTweet.getMyUserData());
 
 			/**
 			 * 問題なければtweet.jspにフォワード
