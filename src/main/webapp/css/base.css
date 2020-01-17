@@ -19,15 +19,15 @@ h1.header-title {
 }
 
 h1.header-title a {
-	border-top: solid 2px aquamarine;
-	border-bottom: solid 2px aquamarine;
+	border-top: 2px solid aquamarine;
+	border-bottom: 2px solid aquamarine;
 	color: blue;
 	text-decoration: none;
 }
 
 nav.header-nav {
 	background-color: rgb(65, 224, 131);
-	border: dashed 1px aquamarine;
+	border: 1px dashed aquamarine;
 	border-radius: 15px;
 	color: blue;
 	margin: 0 5% 0 5%;
@@ -66,7 +66,7 @@ div.main-content {
 /*sidebar部分ここから*/
 div.sidebar-template {
 	background-color: blanchedalmond;
-	border: solid 2px aquamarine;
+	border: 2px solid aquamarine;
 	border-radius: 10px;
 	color: black;
 	margin: 0 1% 0.5% 0;
@@ -99,9 +99,11 @@ nav.sidebar-nav a:hover {
 /*sidebar部分ここまで*/
 
 /*article部分ここから*/
+
+/*article共通部分ここから*/
 div.article-template {
 	background-color: whitesmoke;
-	border: dashed 2px aqua;
+	border: 2px dashed aqua;
 	border-radius: 15px;
 	color: black;
 	margin: 0 0 0.5% 0;
@@ -118,6 +120,21 @@ h2.article-title span:hover {
 	border-bottom: none;
 }
 
+div.article-account-box {
+	background-color: rgb(212, 255, 112);
+	border: 2px solid aquamarine;
+	border-radius: 15px;
+}
+
+div.article-account-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*article共通部分ここまで*/
+
 /*index.htmlのブロック表記ここから*/
 div.article-figure {
 	display: flex;
@@ -129,7 +146,7 @@ div.article-figure {
 
 div.article-figure-block {
 	background-color: aquamarine;
-	border: solid 1px black;
+	border: 1px solid black;
 	border-radius: 15px;
 	margin: 0.5% 0.5% 0 0.5%;
 	padding: 0 1% 0 1%;
@@ -150,6 +167,7 @@ h4.article-figure-title a {
 h4.article-figure-title a:hover {
 	text-decoration-line: underline;
 }
+
 /*index.htmlのブロック表記ここまで*/
 
 /*jspのユーザーデータ出力の表記ここから*/

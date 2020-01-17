@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import twitter4j.TwitterException;
 import twitterapp.TwitterTimeline;
-import twitterapp.TwitterUserData;
 
 @WebServlet(name = "TwitterTimelineServlet", urlPatterns = { "/admin/timeline" })
 public class TwitterTimelineServlet extends HttpServlet {
@@ -35,10 +34,10 @@ public class TwitterTimelineServlet extends HttpServlet {
 			twitterTimeline.setTimelineStatusList(timelineName, timelineTargetScreenName);
 
 			/**
-			 * UserName取得,UserImageURLの取得
+			 * myUserDataをset
 			 */
-			request.setAttribute("toStringMyUserData",
-					TwitterUserData.toStringUserData(twitterTimeline.getMyUserData()));
+			request.setAttribute("myUserData", twitterTimeline.getMyUserData());
+
 			/**
 			 * 取得した諸情報をtimeline.jspの変数にセット
 			 */
