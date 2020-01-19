@@ -121,9 +121,10 @@ h2.article-title span:hover {
 }
 
 div.article-account-box {
-	background-color: rgb(212, 255, 112);
-	border: 2px solid aquamarine;
+	background-color: #c1ffff;
+	border: 1px solid aquamarine;
 	border-radius: 15px;
+	border: 1px solid aquamarine;
 }
 
 div.article-account-row {

@@ -124,10 +124,53 @@
 					%>
 					<fieldset>
 						<legend>リツイート</legend>
-						<%=TwitterUserData.toStringUserData(tmpStatusDatas[0].getStatusUserData())%>
-
+						<%
+							TwitterUserData twitterUserData = tmpStatusDatas[0].getStatusUserData();
+						%>
+						<div class="article-account-box">
+							<div class="article-account-row">
+								<div>
+									<img src=<%=twitterUserData.getUserImageURL()%> width="64"
+										height="64">
+								</div>
+								<div><%=twitterUserData.getUserName()%>(@<%=twitterUserData.getUserScreenName()%>)
+								</div>
+							</div>
+							<div class="article-account-row">
+								<div>
+									ツイート数:<%=twitterUserData.getUserStatusesCount()%></div>
+								<div>
+									お気に入り数:<%=twitterUserData.getUserFavouritesCount()%></div>
+								<div>
+									フォロー数:<%=twitterUserData.getUserFriendsCount()%></div>
+								<div>
+									フォロワー数:<%=twitterUserData.getUserFollowersCount()%></div>
+							</div>
+						</div>
 						<fieldset>
-							<%=TwitterUserData.toStringUserData(tmpStatusDatas[1].getStatusUserData())%>
+							<%
+								twitterUserData = tmpStatusDatas[1].getStatusUserData();
+							%>
+							<div class="article-account-box">
+								<div class="article-account-row">
+									<div>
+										<img src=<%=twitterUserData.getUserImageURL()%> width="64"
+											height="64">
+									</div>
+									<div><%=twitterUserData.getUserName()%>(@<%=twitterUserData.getUserScreenName()%>)
+									</div>
+								</div>
+								<div class="article-account-row">
+									<div>
+										ツイート数:<%=twitterUserData.getUserStatusesCount()%></div>
+									<div>
+										お気に入り数:<%=twitterUserData.getUserFavouritesCount()%></div>
+									<div>
+										フォロー数:<%=twitterUserData.getUserFriendsCount()%></div>
+									<div>
+										フォロワー数:<%=twitterUserData.getUserFollowersCount()%></div>
+								</div>
+							</div>
 							<%=TwitterStatusTextData.toStringStatusText(tmpStatusDatas[1].getStatusTextData())%>
 							<%=TwitterStatusTextData.toStringStatusMediaURLList(tmpStatusDatas[1].getStatusTextData(),
 							tmpStatusDatas[1].getStatusId())%>
@@ -141,13 +184,57 @@
 					%>
 					<fieldset>
 						<legend>引用リツイート</legend>
-						<%=TwitterUserData.toStringUserData(tmpStatusDatas[0].getStatusUserData())%>
+						<%
+							TwitterUserData twitterUserData = tmpStatusDatas[0].getStatusUserData();
+						%>
+						<div class="article-account-box">
+							<div class="article-account-row">
+								<div>
+									<img src=<%=twitterUserData.getUserImageURL()%> width="64"
+										height="64">
+								</div>
+								<div><%=twitterUserData.getUserName()%>(@<%=twitterUserData.getUserScreenName()%>)
+								</div>
+							</div>
+							<div class="article-account-row">
+								<div>
+									ツイート数:<%=twitterUserData.getUserStatusesCount()%></div>
+								<div>
+									お気に入り数:<%=twitterUserData.getUserFavouritesCount()%></div>
+								<div>
+									フォロー数:<%=twitterUserData.getUserFriendsCount()%></div>
+								<div>
+									フォロワー数:<%=twitterUserData.getUserFollowersCount()%></div>
+							</div>
+						</div>
 						<%=TwitterStatusTextData.toStringStatusText(tmpStatusDatas[0].getStatusTextData())%>
 						<%=TwitterStatusTextData.toStringStatusMediaURLList(tmpStatusDatas[0].getStatusTextData(),
 							tmpStatusDatas[0].getStatusId())%>
 						<%=TwitterStatusData.toStringStatusCreateTime(tmpStatusDatas[0])%>
 						<fieldset>
-							<%=TwitterUserData.toStringUserData(tmpStatusDatas[1].getStatusUserData())%>
+							<%
+								twitterUserData = tmpStatusDatas[1].getStatusUserData();
+							%>
+							<div class="article-account-box">
+								<div class="article-account-row">
+									<div>
+										<img src=<%=twitterUserData.getUserImageURL()%> width="64"
+											height="64">
+									</div>
+									<div><%=twitterUserData.getUserName()%>(@<%=twitterUserData.getUserScreenName()%>)
+									</div>
+								</div>
+								<div class="article-account-row">
+									<div>
+										ツイート数:<%=twitterUserData.getUserStatusesCount()%></div>
+									<div>
+										お気に入り数:<%=twitterUserData.getUserFavouritesCount()%></div>
+									<div>
+										フォロー数:<%=twitterUserData.getUserFriendsCount()%></div>
+									<div>
+										フォロワー数:<%=twitterUserData.getUserFollowersCount()%></div>
+								</div>
+							</div>
 							<%=TwitterStatusTextData.toStringStatusText(tmpStatusDatas[1].getStatusTextData())%>
 							<%=TwitterStatusTextData.toStringStatusMediaURLList(tmpStatusDatas[1].getStatusTextData(),
 							tmpStatusDatas[1].getStatusId())%>
@@ -161,7 +248,29 @@
 					%>
 					<fieldset>
 						<legend>通常ツイート</legend>
-						<%=TwitterUserData.toStringUserData(tmpStatusDatas[0].getStatusUserData())%>
+						<%
+							TwitterUserData twitterUserData = tmpStatusDatas[0].getStatusUserData();
+						%>
+						<div class="article-account-box">
+							<div class="article-account-row">
+								<div>
+									<img src=<%=twitterUserData.getUserImageURL()%> width="64"
+										height="64">
+								</div>
+								<div><%=twitterUserData.getUserName()%>(@<%=twitterUserData.getUserScreenName()%>)
+								</div>
+							</div>
+							<div class="article-account-row">
+								<div>
+									ツイート数:<%=twitterUserData.getUserStatusesCount()%></div>
+								<div>
+									お気に入り数:<%=twitterUserData.getUserFavouritesCount()%></div>
+								<div>
+									フォロー数:<%=twitterUserData.getUserFriendsCount()%></div>
+								<div>
+									フォロワー数:<%=twitterUserData.getUserFollowersCount()%></div>
+							</div>
+						</div>
 						<%=TwitterStatusTextData.toStringStatusText(tmpStatusDatas[0].getStatusTextData())%>
 						<%=TwitterStatusTextData.toStringStatusMediaURLList(tmpStatusDatas[0].getStatusTextData(),
 							tmpStatusDatas[0].getStatusId())%>

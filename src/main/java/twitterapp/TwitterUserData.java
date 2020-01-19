@@ -71,27 +71,6 @@ public class TwitterUserData {
 		return this.userFollowersCount;
 	}
 
-	/**
-	 * @param twitterUserData
-	 * @return HTML
-	 *         <p>
-	 *         <img src="twitterUserData.userImageURL" width="64" height=
-	 *         "64">twitterUserData.userName(@twitterUserData.userScreenName)
-	 *         </p>
-	 */
-	public static final String toStringUserData(TwitterUserData twitterUserData) {
-		StringBuilder stringBuilder = new StringBuilder();
-		stringBuilder.append("<p><img src=\"");
-		stringBuilder.append(twitterUserData.userImageURL);
-		stringBuilder.append("\" width=\"64\" height=\"64\">");
-		stringBuilder.append(twitterUserData.userName);
-		stringBuilder.append("(@");
-		stringBuilder.append(twitterUserData.userScreenName);
-		stringBuilder.append(")</p>");
-
-		return stringBuilder.toString();
-	}
-
 	@Override
 	public final String toString() {
 		return "userId:" + this.userId + "\n" + "userScreenName:" + this.userScreenName + "\n" + "userName:"
